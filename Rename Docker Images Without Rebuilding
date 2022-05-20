@@ -1,0 +1,11 @@
+# Rename image
+To rename your docker image by docker tag command:
+  $ docker tag OldName:tag NewName:tag
+  
+# Rename docker container
+
+To rename docker container, use the rename sub-command as shown, in the following example, we renaming the container maschine1 to a new name maschine2.
+
+  $ sudo docker rename maschine1 maschine2
+After renaming a containers, confirm that it is now using the new name.
+  $ sudo docker ps
