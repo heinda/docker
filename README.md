@@ -23,10 +23,13 @@ docker run -ti --entrypoint=sh user/test_image
 Save the Docker image as a tar file:
 ```
 > docker save -o <path for generated tar file> <image name>
+
 ´´´
   Then copy your image to a new system with regular file transfer tools such as cp, scp or rsync(preferred for big files). After that you will have to load the image into Docker:
+  
 ```
 > docker load -i <path to image tar file>
+  
 ´´´
   # docker commit a running container 
   
