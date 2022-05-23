@@ -29,6 +29,10 @@ Save the Docker image as a tar file:
   
 ```
 > docker load -i <path to image tar file>
+
+Note: This syntax can lead to a .docker_temp_xxxx permission denied error
+better use:
+> docker save image:label > someFile.tar
   
 ```
   # docker commit a running container 
